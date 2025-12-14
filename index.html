@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online CV | Computer Science & Cybersecurity</title>
+  <style>
+    :root {
+      --primary: #0f172a;
+      --secondary: #1e293b;
+      --accent: #38bdf8;
+      --text: #334155;
+      --bg: #f8fafc;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    header p {
+      max-width: 800px;
+      margin: 1rem auto 0;
+      font-size: 1.1rem;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      color: var(--primary);
+      border-left: 5px solid var(--accent);
+      padding-left: 0.75rem;
+    }
+
+    /* Timeline */
+    .timeline {
+      position: relative;
+      margin-left: 1rem;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 4px;
+      height: 100%;
+      background: var(--accent);
+    }
+
+    .timeline-item {
+      margin-left: 2rem;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -2.4rem;
+      top: 0.3rem;
+      width: 14px;
+      height: 14px;
+      background: var(--accent);
+      border-radius: 50%;
+    }
+
+    .timeline-item h3 {
+      font-size: 1.2rem;
+      color: var(--secondary);
+    }
+
+    .timeline-item span {
+      font-size: 0.9rem;
+      color: #64748b;
+    }
+
+    /* Skills */
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+
+    .skill-box {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    /* Footer */
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 4rem;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Your Name</h1>
+  <p>
+    Computer Science Student | Aspiring Cybersecurity Specialist | 
+    Marketing & Communication Enthusiast | Workshop & Conference Speaker
+  </p>
+</header>
+
+<section>
+  <h2>Profile</h2>
+  <p>
+    Computer Science student with strong interest in cybersecurity, marketing, and communication.
+    Passionate about delivering workshops, conferences, and corporate training for employees and
+    university students. Highly active, team-oriented, and motivated by continuous learning,
+    sports, and travel.
+  </p>
+</section>
+
+<section>
+  <h2>Experience Timeline</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <h3>Job / Internship Title</h3>
+      <span>Company Name | 2024 – Present</span>
+      <p>Brief description of responsibilities, achievements, and impact.</p>
+    </div>
+    <div class="timeline-item">
+      <h3>Volunteer / Teaching Assistant</h3>
+      <span>Organization | 2023 – 2024</span>
+      <p>Workshops, mentoring, event organization, or cybersecurity awareness activities.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Projects</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <h3>Project Name</h3>
+      <span>Technologies: Python, Web, Security</span>
+      <p>Short explanation of the project, goals, and outcomes.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="skill-box">Programming: Python, JavaScript, HTML, CSS</div>
+    <div class="skill-box">Cybersecurity Fundamentals</div>
+    <div class="skill-box">Networking & Systems Basics</div>
+    <div class="skill-box">Public Speaking & Workshops</div>
+    <div class="skill-box">Marketing & Communication</div>
+    <div class="skill-box">Teamwork & Leadership</div>
+  </div>
+</section>
+
+<section>
+  <h2>Volunteering & Activities</h2>
+  <p>
+    Actively involved in sports and social activities. Passionate about swimming, running,
+    traveling, and joining collaborative events that promote learning and innovation.
+  </p>
+</section>
+
+<footer>
+  <p>
+    © 2025 Your Name | 
+    <a href="https://github.com/yourusername">GitHub</a> | 
+    <a href="https://www.linkedin.com">LinkedIn</a>
+  </p>
+</footer>
+
+<script>
+  // Simple JS placeholder for future enhancements
+  console.log('Online CV loaded successfully');
+</script>
+
+</body>
+</html>
