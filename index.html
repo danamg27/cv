@@ -144,6 +144,10 @@
     <!---Aspiring Cybersecurity Specialist | 
     Marketing & Communication Enthusiast | Workshop & Conference Speaker--->
   </p>
+  <div style="margin-top:1rem;">
+<button onclick="setLang('en')">EN</button>
+<button onclick="setLang('es')">ES</button>
+</div>
 </header>
 
 <section>
@@ -297,8 +301,15 @@
 <script>
   // Simple JS placeholder for future enhancements
   console.log('Online CV loaded successfully');
+  function setLang(lang) {
+    document.querySelectorAll('[data-en]').forEach(el => {
+    el.textContent = el.getAttribute(`data-${lang}`);
+    });
+    }
+    setLang('en');
 </script>
 
 </body>
 </html>
+
 
